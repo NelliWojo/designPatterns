@@ -4,8 +4,8 @@ export default function useCustom(defaultValue?: string) {
   const [value, setValue] = useState(defaultValue || "");
 
   useEffect(() => {
-    setValue("updated"), [];
-  });
+    setValue("updated");
+  }, []);
 
   return value;
 }
